@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: `Blog`,
-    siteUrl: `https://www.gatsbyjs.com`,
+    siteUrl: `https://www.momen.studio`,
     description: `Blazing fast modern site generator for React`,
   },
   plugins: [

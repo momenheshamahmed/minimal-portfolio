@@ -1,6 +1,6 @@
 import { Link, graphql } from "gatsby"
 import React from "react"
-
+import Navbar from "../components/navbar"
 import "../styles/index.sass"
 
 export default function Home({ data }) {
@@ -8,6 +8,7 @@ export default function Home({ data }) {
 
   return (
     <div className="bg-gray-900 min-h-screen font-sans text-xl border-box text-white p-12">
+      <Navbar />
       <h1 className="text-center pt-12 border-box text-4xl font-bold">
         Thoughts
       </h1>
