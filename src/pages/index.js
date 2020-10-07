@@ -1,25 +1,27 @@
 import { Link, graphql } from "gatsby"
 import React from "react"
-import Navbar from "../components/navbar"
+import IntroSection from "../components/IntroSection"
+import Navbar from "../components/Navbar"
 import "../styles/index.sass"
 
 export default function Home({ data }) {
   const { nodes } = data.allMarkdownRemark
 
   return (
-    <div className="bg-gray-900 min-h-screen font-sans text-xl border-box text-white p-12">
+    <div className="container ">
       <Navbar />
-      <h1 className="text-center pt-12 border-box text-4xl font-bold">
-        Thoughts
+      <IntroSection />
+      <h1 className="">
+        Thought
       </h1>
-      <ul className="w-4/5 m-auto mt-12 border-box grid grid-cols-2 gap-10">
+      <ul className="">
         {nodes.map(({ frontmatter }) => (
-          <li className="p-8 border-box bg-gray-700 rounded-lg">
-            <Link to={frontmatter.slug} className="text-2xl font-bold">
+          <li className="">
+            <Link to={frontmatter.slug} className="">
               <h2>{frontmatter.title}</h2>
             </Link>
-            <p className="mt-4">{frontmatter.introduction}</p>
-            <span className="mt-4 block font-light text-base">
+            <p className="">{frontmatter.introduction}</p>
+            <span className="">
               {frontmatter.date}
             </span>
           </li>
