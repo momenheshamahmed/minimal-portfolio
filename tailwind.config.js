@@ -8,6 +8,9 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      borderRadius: {
+        xlarge: "24px",
+      },
       colors: {
         gray: {
           ...colors.gray,
@@ -15,6 +18,9 @@ module.exports = {
           900: "#151618",
         },
       },
+    },
+    backgroundColor: {
+      primary: "#FFB400",
     },
   },
   variants: {},

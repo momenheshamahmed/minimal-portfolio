@@ -1,19 +1,14 @@
 import { Link, graphql } from "gatsby"
 import React from "react"
-import IntroSection from "../components/IntroSection"
-import Navbar from "../components/Navbar"
 import "../styles/index.sass"
-
+import { Header } from "../components/Header"
 export default function Home({ data }) {
   const { nodes } = data.allMarkdownRemark
 
   return (
     <div className="container ">
-      <Navbar />
-      <IntroSection />
-      <h1 className="">
-        Thought
-      </h1>
+      <Header />
+      <h1 className="">Thought</h1>
       <ul className="">
         {nodes.map(({ frontmatter }) => (
           <li className="">
@@ -21,9 +16,7 @@ export default function Home({ data }) {
               <h2>{frontmatter.title}</h2>
             </Link>
             <p className="">{frontmatter.introduction}</p>
-            <span className="">
-              {frontmatter.date}
-            </span>
+            <span className="">{frontmatter.date}</span>
           </li>
         ))}
       </ul>
