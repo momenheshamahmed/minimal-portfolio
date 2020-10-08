@@ -3,6 +3,7 @@ import React from "react"
 import "../styles/index.sass"
 import { Header } from "../components/Header"
 import { SectionTwo } from "../components/SectionTwo"
+import { Projects } from "../components/SectionThree"
 export default function Home({ data }) {
   const { nodes } = data.allMarkdownRemark
 
@@ -24,6 +25,7 @@ export default function Home({ data }) {
         </ul> */}
       </div>
       <SectionTwo />
+      <Projects />
     </div>
   )
 }

@@ -21,6 +21,7 @@ module.exports = {
     },
     backgroundColor: {
       primary: "#FFB400",
+      grey: "#D7D7D7",
     },
   },
   variants: {},
