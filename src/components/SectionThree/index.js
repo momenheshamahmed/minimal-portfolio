@@ -2,7 +2,7 @@ import React from "react"
 import { Card } from "./Card"
 export const Projects = () => {
   return (
-    <div className="container">
+    <section className="container">
       <div className=" m-auto">
         <div className="mt-12">
           <h1 className="uppercase text-6xl font-bold mb-8">Projects</h1>
@@ -53,6 +53,6 @@ export const Projects = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

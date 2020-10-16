@@ -22,6 +22,7 @@ module.exports = {
     backgroundColor: {
       primary: "#FFB400",
       grey: "#D7D7D7",
+      secGrey: "#F8F8F8",
     },
   },
   variants: {},

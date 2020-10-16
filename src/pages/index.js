@@ -4,6 +4,7 @@ import "../styles/index.sass"
 import { Header } from "../components/Header"
 import { SectionTwo } from "../components/SectionTwo"
 import { Projects } from "../components/SectionThree"
+import { Articles } from "../components/SectionFour"
 export default function Home({ data }) {
   const { nodes } = data.allMarkdownRemark
 
@@ -26,6 +27,7 @@ export default function Home({ data }) {
       </div>
       <SectionTwo />
       <Projects />
+      <Articles />
     </div>
   )
 }
