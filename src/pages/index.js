@@ -5,6 +5,8 @@ import { Header } from "../components/Header"
 import { SectionTwo } from "../components/SectionTwo"
 import { Projects } from "../components/SectionThree"
 import { Articles } from "../components/SectionFour"
+import { Footer } from "../components/Footer"
+
 export default function Home({ data }) {
   const { nodes } = data.allMarkdownRemark
 
@@ -28,6 +30,7 @@ export default function Home({ data }) {
       <SectionTwo />
       <Projects />
       <Articles />
+      <Footer />
     </div>
   )
 }

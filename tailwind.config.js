@@ -23,6 +23,8 @@ module.exports = {
       primary: "#FFB400",
       grey: "#D7D7D7",
       secGrey: "#F8F8F8",
+      thirdGrey: "#F2F2F2",
+      fourGrey: "#B5B5B5",
     },
   },
   variants: {},
