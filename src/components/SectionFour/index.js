@@ -20,16 +20,16 @@ const Card = ({ date, title, text, catagory }) => {
 }
 export const Articles = () => {
   return (
-    <section className="container m-auto bg-secGrey opacity-100 py-24 h-full">
-      <div className="my-12">
-        <h1 className="uppercase text-6xl font-bold mb-8">Projects</h1>
+    <section className="container m-auto bg-secGrey ">
+      <div className="my-12 pt-24">
+        <h1 className="uppercase text-6xl font-bold mb-8">Blog</h1>
         <p className="opacity-75 w-1/2">
           All I want is to be a monkey of moderate intelligence who wears a
           suit… that's why I'm transferring to business school! Michelle, I
           don't regret th is, but I both rue and lament it.
         </p>
       </div>
-      <div className="grid grid-col1 sm:grid-cols-2 md:grid-cols-3 gap-5 gap-y-10">
+      <div className="grid grid-col1 sm:grid-cols-2 md:grid-cols-3 gap-5 gap-y-10 pb-24">
         <Card
           date="12.9.2020"
           title="All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! Michelle."
