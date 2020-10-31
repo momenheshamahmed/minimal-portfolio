@@ -19,7 +19,14 @@ export const Projects = () => {
         this, but I both rue and lament it."
           link1="app store"
           link2="app store"
-          link3="app store"
+          href1="htt"
+        />
+        <Card
+          title="Title"
+          text="All I want is to be a monkey of moderate intelligence who wears a suit…
+        that's why I'm transferring to business school! Michelle, I don't regret
+        this, but I both rue and lament it."
+
         />
         <Card
           title="Title"
@@ -35,18 +42,7 @@ export const Projects = () => {
           text="All I want is to be a monkey of moderate intelligence who wears a suit…
         that's why I'm transferring to business school! Michelle, I don't regret
         this, but I both rue and lament it."
-          link1="app store"
-          link2="app store"
-          link3="app store"
-        />
-        <Card
-          title="Title"
-          text="All I want is to be a monkey of moderate intelligence who wears a suit…
-        that's why I'm transferring to business school! Michelle, I don't regret
-        this, but I both rue and lament it."
-          link1="app store"
-          link2="app store"
-          link3="app store"
+
         />
       </div>
     </section>
