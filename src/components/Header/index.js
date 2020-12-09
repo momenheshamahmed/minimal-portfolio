@@ -1,12 +1,15 @@
 import React from "react"
-import { useSpring, animated } from "react-spring"
 
 import Frame from "./Frame 3.svg"
 import Arrow from "./arrow.svg"
 export const Header = () => {
-  const Link = ({ text }) => {
+  const Link = ({ text, href }) => {
     return (
-      <a href="/" className=" font-bold uppercase flex items-center pb-5">
+      <a
+        href={href}
+        target="_blank"
+        className="font-bold uppercase flex items-center pb-5"
+      >
         <span className="mr-4 ">
           <img src={Arrow} />
         </span>
@@ -14,44 +17,31 @@ export const Header = () => {
       </a>
     )
   }
-  const props = useSpring({
-    from: { opacity: 0, marginRight: -1000 },
-    to: {
-      opacity: 1,
-      marginRight: 0,
-    },
-    config: { delay: 2000, duration: 2000 },
-  })
 
   return (
     <div className="container m-auto mt-8 mb-16">
       <div className="flex justify-end items-end">
         <Link text="résume" />
       </div>
-      <animated.div style={props}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 my-48 ">
-          <div>
-            <h1 className="text-5xl mb-6 font-blod">I'm Momen.</h1>
-            <p className="text-3xl mb-12 ">
-              Always Curios, Always Questioning!
-            </p>
-            <button className="bg-primary uppercase font-bold rounded-xlarge py-5 px-10 ">
-              let's connect
-            </button>
-          </div>
-          <figure>
-            <img src={Frame} className="h-full w-full" />
-          </figure>
+      <div className="grid grid-cols-1 lg:grid-cols-2 my-48 ">
+        <div>
+          <h1 className="text-5xl mb-6 font-blod">I'm Momen.</h1>
+          <p className="text-2xl mb-12 font-light">Always Curios, Always Questioning!</p>
+          <button className="bg-primary uppercase font-bold rounded-xlarge py-5 px-10 ">
+            let's connect
+          </button>
         </div>
-      </animated.div>
+        <figure>
+          <img src={Frame} className="h-full w-full" />
+        </figure>
+      </div>
       <div className="flex justify-between">
         <div className="w-11/12">
-          <a
-            href="/"
+          <span
             className=" font-bold no-underline hover:underline uppercase"
           >
             About
-          </a>
+          </span>
           <p className="mt-10 opacity-75 w-1/2">
             I’m an Egyptian designer based in Cairo, currently working as UX/UI
             Designer at
@@ -65,10 +55,10 @@ export const Header = () => {
         </div>
         <div>
           <ul>
-            <Link text="résume" />
-            <Link text="résume" />
-            <Link text="résume" />
-            <Link text="résume" />
+            <Link text="résume" href="https://momen.studio" />
+            <Link text="résume" href="https://momen.studio" />
+            <Link text="résume" href="https://momen.studio" />
+            <Link text="résume" href="https://momen.studio" />
           </ul>
         </div>
       </div>

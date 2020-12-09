@@ -1,7 +1,7 @@
 import React from "react"
 import Background from "./stars.svg"
 import Star from "./Vector.svg"
-export const SectionTwo = () => {
+export const Services = () => {
   var sectionStyle = {
     width: "100%",
     height: "100vh",
@@ -9,18 +9,15 @@ export const SectionTwo = () => {
     paddingBottom: "64px",
     backgroundImage: `url(${Background})`,
   }
-  const Link = ({ text }) => {
+  const Service = ({ text }) => {
     return (
       <li className="flex items-center">
         <span className="mr-6">
           <img src={Star} />
         </span>
-        <a
-          href="/"
-          className="font-bold uppercase  text-6xl leading-10 tracking-wider hover:underline"
-        >
+        <span className="font-bold uppercase  text-6xl leading-10 tracking-wider ">
           {text}
-        </a>
+        </span>
       </li>
     )
   }
@@ -30,9 +27,9 @@ export const SectionTwo = () => {
       style={sectionStyle}
     >
       <ul className="w-11/12  h-full flex  flex-col justify-around py-16">
-        <Link text="UX Design" />
-        <Link text="UI & Interaction Design" />
-        <Link text="Product Consultancy" />
+        <Service text="UX Design" />
+        <Service text="UI & Interaction Design" />
+        <Service text="Product Consultancy" />
       </ul>
     </div>
   )
